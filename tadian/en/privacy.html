@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>踏點 Privacy Policy</title>
+    <meta name="description" content="Privacy policy for 踏點: how location, photos, project records, diagnostics and purchase state are handled.">
+    <link rel="alternate" hreflang="zh-Hant" href="https://logua-studio.github.io/tadian/privacy.html">
+    <link rel="alternate" hreflang="en" href="https://logua-studio.github.io/tadian/en/privacy.html">
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body>
+    <header class="site nav">
+      <a class="brand" href="./index.html"><span class="mark">踏</span><span>踏點</span></a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="./privacy.html">Privacy</a>
+        <a href="./support.html">Support</a>
+        <a href="./terms.html">Terms</a>
+        <a href="../privacy.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+      </nav>
+    </header>
+
+    <main class="site document">
+      <p class="eyebrow">Privacy Policy</p>
+      <h1>踏點 Privacy Policy</h1>
+      <p class="lead">Last updated: 2026-09-12</p>
+
+      <h2>Scope</h2>
+      <p>This policy applies to the 踏點 iOS app provided by Logua Studio (“the app”). The app keeps field points, photos, coordinates and exported files on the user's device, and does not require an account.</p>
+
+      <h2>Principles</h2>
+      <p>踏點 is a tool for recording field coordinates and photos. Your points, photos and project data may contain information about work sites, locations and times, so the app is built around on-device storage, user-initiated export, and using as little data as possible.</p>
+
+      <h2>Data the app handles</h2>
+      <ul>
+        <li><strong>Location data:</strong> used to show your current position, create points, record photo positions, look up addresses, and convert WGS84, TWD97 and TWD67 coordinates. Positioning happens when you use it inside the app; the app does not track your location in the background.</li>
+        <li><strong>Photos and photo library data:</strong> used to take or import photos and, with your permission, to read GPS, capture time or direction information from them. You can also choose to save photos taken inside the app to the system photo library.</li>
+        <li><strong>Project and point records:</strong> may include project names, point names, notes, coordinates, addresses, photo annotations, creation and update times, and export settings.</li>
+        <li><strong>Device and usage diagnostics:</strong> only when you turn on field-test diagnostics does the app keep, on the device and for a limited period, usage events together with app and iOS version, device model, time zone, battery level, map style and location permission state.</li>
+        <li><strong>Purchase and trial state:</strong> Pro is an in-app purchase; the transaction is handled by Apple's App Store, and the app neither receives nor stores your payment details.<br>
+        The app stores the <strong>trial start time</strong> in the device Keychain, together with a timestamp used to stop the trial being extended by changing the system clock. Keychain items are managed by iOS and their lifetime is not under the app's control; these items are marked device-only, so they are not synced to iCloud Keychain and are not restored to another device from a backup.<br>
+        For purchase state, your actual Pro entitlement is determined by <strong>StoreKit verification with the App Store</strong>. The app additionally keeps a <strong>cache</strong> of the most recent verification result, so that being offline or a temporary lookup failure is not mistaken for “not purchased”. The cache itself does not grant an entitlement.<br>
+        None of this is sent to any server of ours (the app has no server).</li>
+      </ul>
+
+      <h2>Storage, deletion and sharing</h2>
+      <ul>
+        <li>The app currently has no account sign-in, cloud sync, advertising, cross-app tracking or automatic upload. Projects, points, photos, PDF settings and your company logo are kept on the device.</li>
+        <li>Clearing items under “Recent Exports” removes only the delivery files, not the original points and photos. For long-term retention, export a PDF, a full ZIP archive or another data format first, then back it up with the Files app or the system share sheet.</li>
+        <li>You can delete projects, points, photos and diagnostic records inside the app; deleting the app may also remove the data it holds. Files you have already shared or saved elsewhere are not affected by deletion inside the app.</li>
+        <li>When you export or share files, send a problem report, use map or address services, or open navigation, the relevant data may be processed by the system or by the external service involved.</li>
+      </ul>
+
+      <h2>Retention of field-test diagnostics</h2>
+      <p>Field-test diagnostics are kept on the device for at most 14 days by default, subject to limits on event count and file size. Location-related events are reduced to approximately 100-metre precision beforehand, though a recipient of an export may still recognise the general area. Problem reports do not include a precise position by default; a full position is attached only when you explicitly enable that option, precise location permission is granted at the time, and a position sample from within the last 20 seconds is available. Diagnostic data leaves the device only when you generate and share a report file.</p>
+
+      <h2>What each permission is for</h2>
+      <ul>
+        <li>Location: obtain the current position and create coordinate records.</li>
+        <li>Camera: take site photos and attach them to points.</li>
+        <li>Photo library: select photos, read their GPS information, and add them to project points.</li>
+      </ul>
+
+      <h2>Third-party services</h2>
+      <p>Address lookup, map display and PDF map snapshots may use map and location services provided by Apple. You may also choose to open navigation in Apple Maps or Google Maps; when you use those external services, your data is handled under their own privacy policies. The app does not control how external services retain data.</p>
+
+      <h2>Changes to this policy</h2>
+      <p>If the way the app handles data changes materially, we will update the “Last updated” date on this page and explain the change where appropriate. Continuing to use the updated app means you have read the update.</p>
+
+      <h2>Contact</h2>
+      <p>If you have questions about this policy or how data is handled, contact Logua Studio through the <a href="./support.html">support page</a>.</p>
+    </main>
+
+    <footer class="site footer">
+      <span>© 2026 Logua Studio. All rights reserved.</span>
+      <span>踏點</span>
+    </footer>
+  </body>
+</html>

@@ -257,6 +257,78 @@ p {
   font-size: 0.92rem;
 }
 
+/* 上架前的 App Store 連結。**看得出是還不能按的**，
+   不要做成看起來可以按卻沒有目的地的按鈕。 */
+.button.pending {
+  background: var(--surface);
+  color: var(--muted);
+  border: 1px dashed var(--line);
+  cursor: default;
+}
+
+.note {
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+/* 截圖區。素材還沒有，先把版面與比例定下來，
+   之後把 App Store 那組正式素材放進 .shot-frame 即可。 */
+.shots {
+  margin-top: 24px;
+}
+
+.shot {
+  margin: 0;
+  padding: 14px;
+}
+
+.shot-frame {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 9 / 19.5;
+  border: 1px dashed var(--line);
+  border-radius: 12px;
+  background: var(--accent-soft);
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.shot figcaption {
+  margin-top: 12px;
+  font-size: 0.94rem;
+}
+
+/* 試用與專業版。單張面板，不做成價目表 ——
+   目前只有一個商品，排成表格會顯得像有多個方案。 */
+.pro {
+  padding: 30px;
+}
+
+.pro h3 {
+  margin-top: 26px;
+}
+
+.pro-list {
+  margin: 0;
+  padding-left: 1.2rem;
+  color: var(--muted);
+}
+
+/* 「以上為目前專業版核心功能。」緊貼最後一個項目時
+   會被讀成清單的一部分，而它是在界定清單的範圍。 */
+.pro-list + .muted {
+  margin-top: 12px;
+}
+
+.pro-terms {
+  margin-top: 24px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+  color: var(--text);
+  font-weight: 700;
+}
+
 @media (max-width: 760px) {
   .nav {
     align-items: flex-start;
@@ -274,5 +346,16 @@ p {
 
   .grid {
     grid-template-columns: 1fr;
+  }
+
+  .pro {
+    padding: 22px;
+  }
+}
+
+/* 截圖在窄螢幕排一欄會太長 —— 手機上兩欄剛好。 */
+@media (max-width: 760px) {
+  .grid.shots {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }

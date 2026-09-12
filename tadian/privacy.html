@@ -4,7 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>踏點隱私權政策</title>
-    <meta name="description" content="踏點隱私權政策，說明定位、照片、專案紀錄與匯出資料的使用方式。">
+    <meta name="description" content="踏點隱私權政策，說明定位、照片、專案紀錄、外測診斷與購買狀態的處理方式。">
+    <link rel="alternate" hreflang="zh-Hant" href="https://logua-studio.github.io/tadian/privacy.html">
+    <link rel="alternate" hreflang="en" href="https://logua-studio.github.io/tadian/en/privacy.html">
     <link rel="stylesheet" href="./styles.css">
   </head>
   <body>
@@ -14,13 +16,14 @@
         <a href="./privacy.html">隱私權政策</a>
         <a href="./support.html">支援</a>
         <a href="./terms.html">使用條款</a>
+        <a href="./en/privacy.html" hreflang="en" lang="en">English</a>
       </nav>
     </header>
 
     <main class="site document">
       <p class="eyebrow">Privacy Policy</p>
       <h1>踏點隱私權政策</h1>
-      <p class="lead">最後更新：2026-08-02</p>
+      <p class="lead">最後更新：2026-09-12</p>
 
       <h2>適用範圍</h2>
       <p>本政策適用於 Logua Studio 提供的「踏點」iOS App（以下稱「本 App」）。本 App 主要在使用者裝置上保存現場點位、照片、坐標與匯出檔案，不要求建立帳號。</p>
@@ -34,6 +37,10 @@
         <li><strong>照片與相簿資料：</strong>用於拍攝或匯入照片，並在使用者授權後讀取照片中的 GPS、拍攝時間或方向資訊。使用者也可以選擇把 App 直接拍攝的照片同步保存到系統相片庫。</li>
         <li><strong>專案與點位紀錄：</strong>可能包含專案名稱、點位名稱、備註、坐標、地址、照片註記、建立時間、更新時間與匯出設定。</li>
         <li><strong>裝置與操作診斷：</strong>只有在使用者開啟工程版外測診斷時，App 才會在本機保存有限期間的操作事件、App／iOS 版本、裝置型號、時區、電量、地圖樣式與定位權限狀態。</li>
+        <li><strong>購買與試用狀態：</strong>專業版為 App 內購買項目，交易由 Apple 的 App Store 處理；本 App 不會收到、也不保存你的付款資料。<br>
+        本 App 會在裝置的 Keychain 保存<strong>試用起算時間</strong>，以及一個用於防止調整系統時間延長試用的時間標記。Keychain 項目由 iOS 管理，其存續不受本 App 控制；相關項目設定為僅限本機（不同步到 iCloud 鑰匙圈、不隨備份還原到其他裝置）。<br>
+        購買狀態方面，實際的專業版權利以 <strong>StoreKit 向 App Store 驗證的結果為準</strong>；本 App 另外保留一份最近一次驗證結果的<strong>快取</strong>，用途是在離線或暫時查詢不到時不誤判為未購買，快取本身不構成權利。<br>
+        以上資料都不會傳送到我們自己的伺服器（本 App 沒有伺服器）。</li>
       </ul>
 
       <h2>資料保存、刪除與分享</h2>
@@ -41,7 +48,7 @@
         <li>本 App 目前沒有帳號登入、雲端同步、廣告、跨 App 追蹤或自動上傳功能；專案、點位、照片、PDF 設定與公司標誌主要保存在裝置內。</li>
         <li>「最近匯出檔」中的清除功能只會清除交付檔，不會刪除原始點位與照片。需要長期保存時，請先匯出 PDF、ZIP 完整包或其他資料格式，再使用檔案 App 或系統分享備份。</li>
         <li>使用者可以在 App 內刪除專案、點位、照片與外測診斷紀錄；刪除 App 也可能一併移除 App 內資料。已分享或另存到裝置外的檔案不會因 App 內刪除而自動消失。</li>
-        <li>只有在使用者主動匯出或分享檔案、寄送問題回報附件，或開啟 Apple Maps／Google Maps 導航時，相關資料才會經由系統分享流程、Mail App 或外部地圖服務處理。</li>
+        <li>當你匯出或分享檔案、寄送問題回報、使用地圖或地址服務，或開啟導航時，相關資料可能由系統或所涉及的外部服務處理。</li>
       </ul>
 
       <h2>外測診斷的保留範圍</h2>
@@ -66,7 +73,7 @@
 
     <footer class="site footer">
       <span>© 2026 Logua Studio. All rights reserved.</span>
-      <span>踏點 Tadian</span>
+      <span>踏點</span>
     </footer>
   </body>
 </html>
