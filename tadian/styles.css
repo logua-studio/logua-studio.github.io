@@ -243,6 +243,20 @@ p {
   font-size: 0.88rem;
 }
 
+/* 三步驟流程圖:AI 背景＋原始截圖貼上＋程式打字(截圖素材/網站流程圖/compose.swift)。 */
+.flow {
+  margin: 0;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.flow img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
 /* 截圖區:App 的真實畫面(1.1.0 上架截圖;專案照片與 PDF 用 2026-09 那組)。 */
 .shots {
   margin-top: 24px;
