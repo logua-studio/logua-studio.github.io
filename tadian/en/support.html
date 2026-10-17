@@ -7,6 +7,7 @@
     <meta name="description" content="Support for FootPoint: first run, permissions, location, photos, exports, diagnostics, trial and purchase.">
     <link rel="alternate" hreflang="zh-Hant" href="https://logua-studio.github.io/tadian/support.html">
     <link rel="alternate" hreflang="en" href="https://logua-studio.github.io/tadian/en/support.html">
+    <link rel="alternate" hreflang="ja" href="https://logua-studio.github.io/tadian/ja/support.html">
     <link rel="stylesheet" href="../styles.css">
   </head>
   <body>
@@ -17,6 +18,7 @@
         <a href="./support.html">Support</a>
         <a href="./terms.html">Terms</a>
         <a href="../support.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+        <a href="../ja/support.html" hreflang="ja" lang="ja">日本語</a>
       </nav>
     </header>
 
@@ -43,8 +45,14 @@
       <h3>Camera or photo library not working</h3>
       <p>Check camera and photo permissions in Settings &gt; Privacy &amp; Security. Photos imported from the library without GPS EXIF are left without a position — the app does not guess one. You can instead create a point from your current location and attach the photo to that point. When “save captured photos to library” is on, only new photos taken inside the app are copied there.</p>
 
+      <h3>Which coordinate systems are supported?</h3>
+      <p>WGS84 latitude and longitude work everywhere. In these regions FootPoint can also show the local national grid: Taiwan TWD97 / TWD67 (TM2 zones 121 and 119); Japan Plane Rectangular CS (JGD2011, zones I–XIX); Australia GDA2020 / MGA zones 46–59; New Zealand NZTM2000 and Chatham Islands TM2000; Great Britain British National Grid (Northern Ireland is not covered). FootPoint recommends a system from your current location, and you can choose one yourself in Settings › Coordinate Format; all conversion happens on the device. Outside these regions only WGS84 is shown, and the map, location, points, photos and exports work as usual.</p>
+
       <h3>Why do TWD67 / TWD97 conversions differ slightly?</h3>
       <p>FootPoint uses a conversion suitable for general field records. TWD67 / TWD97 values are approximate and are not intended for cadastral boundary work, construction acceptance or legal boundary determination.</p>
+
+      <h3>How do I import points from CSV?</h3>
+      <p>Choose Import Points from CSV in the project's “…” menu. Pick the source coordinate system and column order, and before importing you can check the converted positions and which rows will be skipped.</p>
 
       <h3>An imported photo has no coordinates</h3>
       <p>Some photos carry no GPS EXIF, or photo library access is limited. Confirm the photo itself contains location information and that FootPoint is allowed to read it.</p>
@@ -69,13 +77,13 @@
       <h3>How do I restore my purchase on a new phone?</h3>
       <p>Sign in with the same Apple Account you purchased with, open the purchase screen in the app and tap Restore Purchases.</p>
 
-      <h3>Is English supported? What language are the PDFs in?</h3>
-      <p>The app is available in English and Traditional Chinese, following your iPhone's language setting. PDF reports are produced in the app's current language.</p>
+      <h3>Which languages are supported? What language are the PDFs in?</h3>
+      <p>The app is available in English, Japanese and Traditional Chinese, following your iPhone's language setting. PDF reports are produced in the app's current language.</p>
 
       <h3>What can I export in each state?</h3>
       <ul>
         <li><strong>During the trial (seven days after installing):</strong> every format is available, including PDF reports, KMZ and full ZIP archives.</li>
-        <li><strong>After the trial, without Pro:</strong> CSV, GeoJSON, KML, TXT and photo packages. PDF reports, KMZ and full ZIP archives require Pro. Your existing data is not locked — it can still be exported in those formats.</li>
+        <li><strong>After the trial, without Pro:</strong> CSV, GeoJSON, KML, TXT and photo packages (original photos and classic date stamp). PDF reports, KMZ, full ZIP archives and the site info watermarks (concise and detailed) require Pro. Your existing data is not locked — it can still be exported in those formats.</li>
         <li><strong>With Pro:</strong> every format is available.</li>
       </ul>
 

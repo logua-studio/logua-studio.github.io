@@ -7,6 +7,7 @@
     <meta name="description" content="踏點支援頁面，提供工程現場紀錄、照片整理、定位、匯出、試用與購買常見問題。">
     <link rel="alternate" hreflang="zh-Hant" href="https://logua-studio.github.io/tadian/support.html">
     <link rel="alternate" hreflang="en" href="https://logua-studio.github.io/tadian/en/support.html">
+    <link rel="alternate" hreflang="ja" href="https://logua-studio.github.io/tadian/ja/support.html">
     <link rel="stylesheet" href="./styles.css">
   </head>
   <body>
@@ -17,6 +18,7 @@
         <a href="./support.html">支援</a>
         <a href="./terms.html">使用條款</a>
         <a href="./en/support.html" hreflang="en" lang="en">English</a>
+        <a href="./ja/support.html" hreflang="ja" lang="ja">日本語</a>
       </nav>
     </header>
 
@@ -42,8 +44,14 @@
       <h3>相機或相簿無法使用？</h3>
       <p>請到系統「設定 &gt; 隱私權與安全性」確認相機與照片權限。從相簿匯入的照片若沒有 GPS EXIF，App 不會替照片猜測位置；你可以改用現場定位建立點位後，再把照片加入該點位。若開啟「拍照後同步存入相片庫」，只有 App 內直接拍攝的新照片會同步保存。</p>
 
+      <h3>支援哪些坐標系統？</h3>
+      <p>WGS84 經緯度全球通用。另外在以下地區可以顯示當地的坐標系統：台灣 TWD97／TWD67（TM2 121、119 分帶）；日本平面直角座標系（JGD2011，第 I～XIX 系）；澳洲 GDA2020／MGA 46～59 帶；紐西蘭 NZTM2000 與查塔姆群島 TM2000；大不列顛 British National Grid（不含北愛爾蘭）。踏點依目前位置推薦坐標系統，也可以在「設定 › 坐標格式」手動選擇；坐標轉換全部在裝置上進行。在支援地區以外只顯示 WGS84，地圖、定位、點位、照片與匯出都照常可用。</p>
+
       <h3>為什麼 TWD67 / TWD97 轉換有誤差？</h3>
       <p>踏點使用適合一般現場紀錄的坐標轉換方式，TWD67 / TWD97 為近似轉換，不適合地籍鑑界、工程驗收或法律界址等精密用途。</p>
+
+      <h3>怎麼從 CSV 匯入點位？</h3>
+      <p>在專案的「…」選單選「從 CSV 匯入點位」，選擇來源坐標系統與欄位順序後，匯入前可以先看轉換後的位置，以及會略過哪些列。</p>
 
       <h3>照片匯入後沒有坐標怎麼辦？</h3>
       <p>部分照片可能沒有 GPS EXIF 資訊，或相簿權限不足。請確認照片本身包含位置資訊，並允許踏點讀取相簿資料。</p>
@@ -68,13 +76,13 @@
       <h3>換手機之後如何恢復購買？</h3>
       <p>使用當初購買時的同一個 Apple Account 登入新裝置，在 App 的購買頁按「恢復購買」即可。</p>
 
-      <h3>支援英文嗎？PDF 是什麼語言？</h3>
-      <p>App 介面支援繁體中文與英文，跟著 iPhone 的語言設定切換；PDF 報表也跟隨 App 當下的語言輸出。</p>
+      <h3>支援哪些語言？PDF 是什麼語言？</h3>
+      <p>App 介面支援繁體中文、英文與日文，跟著 iPhone 的語言設定切換；PDF 報表也跟隨 App 當下的語言輸出。</p>
 
       <h3>不同狀態可以匯出什麼？</h3>
       <ul>
         <li><strong>試用期間（安裝後七天）：</strong>全部格式都可以匯出，包含 PDF 報表、KMZ 與 ZIP 完整交付包。</li>
-        <li><strong>試用結束、尚未購買專業版：</strong>可以匯出 CSV、GeoJSON、KML、TXT 與照片包；PDF 報表、KMZ 與 ZIP 完整交付包需要專業版。既有資料不會被鎖住，仍然可以用這些格式匯出。</li>
+        <li><strong>試用結束、尚未購買專業版：</strong>可以匯出 CSV、GeoJSON、KML、TXT 與照片包（原始照片、傳統時間戳記）；PDF 報表、KMZ、ZIP 完整交付包與工程資訊浮水印（簡潔、詳細）需要專業版。既有資料不會被鎖住，仍然可以用這些格式匯出。</li>
         <li><strong>購買專業版後：</strong>全部格式都可以匯出。</li>
       </ul>
 
